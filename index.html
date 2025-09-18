@@ -1,2 +1,119 @@
-<h1>Hello! This is my website</h1>
-<p>Welcome to my page.</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Website</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      line-height: 1.6;
+      color: #333;
+      background: #f9f9f9;
+    }
+    header {
+      background: linear-gradient(135deg, #4f46e5, #3b82f6);
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    nav {
+      margin-top: 1rem;
+    }
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background: white;
+      border-radius: 10px;
+      padding: 1rem;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #111827;
+      color: white;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to My Website</h1>
+    <p>Showcasing my projects and work</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hello! I’m Anna Abrahamyan, and this is my personal website. I use this space to share my work, projects, and ideas!</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <img src="https://via.placeholder.com/400x200" alt="Project 1">
+        <h3>Project One</h3>
+        <p>Short description of your project. You can link it below.</p>
+        <a href="#">View Project</a>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/400x200" alt="Project 2">
+        <h3>Project Two</h3>
+        <p>Another project with a description and a link.</p>
+        <a href="#">View Project</a>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/400x200" alt="Project 3">
+        <h3>Project Three</h3>
+        <p>Describe your project here.</p>
+        <a href="#">View Project</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>You can reach me at: <a href="mailto:aabrahamyan2000@gmail.com">aabrahamyan2000@gmail.com</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Your Name — Built with ❤️</p>
+  </footer>
+</body>
+</html>
